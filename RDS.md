@@ -32,5 +32,24 @@ Amazon RDS
       - control traffic and subnets
 - Database instance IP firewall protection
   - security groups: a collection of access rules
-  -
+  - source: IP address
+  - all instances of security group has access to the database
+- IAM governed access
+  - You can use AWS Identity and Access Management (IAM) to control who can perform actions on RDS
+  - who can run the admin stuff
+  - users that are authenticated through the database
+- Database encryption
+  - At Rest Encryption for all RDS Engines AWS Key Management Service (KMS)
+  - spin up a service and gets a key to encrypt the data
+  - the keys are encrypted are wrapped in a master encrypt key (envelope)
+  - two tiered key hierarchy
+- Compliance?
+- Standard monitoring
+  - keep eye on database performance, every minute
+  - can use metric to build alarms, set different thresholds to notify important events
+- Enhance monitoring
+  - up to one second regularity
+  - in order to capture, need to install agent to capture the metrics
+  - open to all 6 db engines
+
 
