@@ -40,3 +40,19 @@ Pricing between RDS and MySQL:
 - Aurora = more expensive on config
 - there is a pricing calculator
 
+PostgreSQL: limited preview
+Aurora + MySql: not yet available until later 2017?
+
+Does a master have a cluster behind it?
+if the master fails, will another master in the cluster will pick up?
+in a cluster, only 1 master is active
+a passive is not open for reads
+if config in multi and adds active passover, it will when the active master fails?
+
+Aurora doesn't use build logs, what does it use?
+Aurora + MySQL: write in all 6 locations and apply it to locations
+  it is a master, distributed to all locations
+  write to a storage that understands and applies the redirect
+
+preview Aurora + PostgreSQL?
+(look at pricing for everything)
