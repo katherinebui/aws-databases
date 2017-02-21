@@ -1,11 +1,11 @@
-Aurora
+February 21, 2017: Aurora
 a new relational database engine, built from the group up to leverage AWS
 
-5 important things:
+Summary:
 - mysql compilable with up to 5x better perforamce on the same hardware 100000 writes/sec 500000 reads/sec
 - scalable with up to 54 tb in single db up to 15 read replicas
 - high available, durable and fault tolerance custom ssd storage layer
-(missing 2)
+(performance enhancement key to aurora)
 
 - supports postgresSQL
 - 15 read replicas, failover without data loss, encryption etc.
@@ -24,3 +24,19 @@ a new relational database engine, built from the group up to leverage AWS
     - once conversation of schema. then use dms to actually do the migration
 
 - Heterogenous migration?
+
+How to compare MySQL to RedShift
+- Redshift, column db - data warehouse workloads, optimize to load giant data in S3
+
+Outside of performances with Aurora
+- data is replicated 6 ways
+- spread into 6 zones
+- i.e. read replicas - less than 10 milsec lag
+- while others depend on build logs and then applied to read replicas = could be gaps
+- Aurora doesn't rely on build technology
+- From application perspective: faster, more accurate and more availability
+
+Pricing between RDS and MySQL:
+- Aurora = more expensive on config
+- there is a pricing calculator
+
