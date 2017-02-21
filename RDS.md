@@ -1,0 +1,36 @@
+Amazon RDS
+
+- A choice of 6 db's
+  - multi-engine support
+- Provisioning and Effortless Scaling
+  - handle higher load or lower usage
+  - naturally grow over time
+  - control flow
+- Potential conflicts
+  - sizing - How big is the db?
+  - can change the scale of the server up or down
+  - can scale up if anticipating work load
+- Read Replicas (through console or api call)
+  - bring data close to your consumer's applications in different regions
+  - can find something that is closer to user to make things run faster
+  - relieve pressure on your master node for supporting reads and writes
+  - promote a read replica to a master for faster recovery in even of disaster
+  - can redirect the replica has the master in case master is fucked up
+- High availability Multi- AZ Deployments
+  - can have multiple replicas and it will handle the payload for you
+- Security and Compliance
+  - different mechanisms for security
+- Network isolation
+- Amazon Virtual Private Cloud (Amazon VPC)
+  - securely control network configuration
+    - different constructs
+    - subnets to isolate application components
+    - who gets assess to your db? (private subnet)
+    - can set up a VPN connection from corporate to RDS db
+    - AWS direct connect: more consistent performance on network
+    - when having application in VPC, use VPC peering (want to access over Internet, Internet gateway)
+      - control traffic and subnets
+- Database instance IP firewall protection
+  - security groups: a collection of access rules
+  -
+
