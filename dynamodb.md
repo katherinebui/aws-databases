@@ -1,4 +1,5 @@
 ## February 22, 2017: NoSQL ##
+https://s3-us-west-1.amazonaws.com/architectureweeks/Database/SF+Februray+21-23%2C+2017/Database+S3.pdf
 
 Data volume since 2010:
 90% of data of stored data generated in last 2 years
@@ -33,6 +34,7 @@ SQL:
   - scale up, but you reach a max
   - optimized for storage
   - ad hoc queries, scale vertically, food for OLAP
+  - each table has it's own schema
 NoSQL:
   - optimized for computer
   - denormalized/ hierarchical
