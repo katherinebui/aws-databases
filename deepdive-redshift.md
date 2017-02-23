@@ -83,7 +83,7 @@ Query:
   - need to finish the first stream before moving onto the second stream
   - separate C++ programs
 
-Query lifecycle:
+Query life cycle:
   - client to leader node
     - explains plans
     - generate all segment for the stream
@@ -94,16 +94,15 @@ Query lifecycle:
     - maybe need some summation or an order by, applied limit
     - leader node will take final results and takes it back up and gives it to the client
 
+Compute Nodes:
+  - slices execute the query segments in parallel
+  - executable segments are created for one stream at a time. when the segments of the stream are complete, the engine generates the segments for the next stream
+  - when the compute nodes are done, they return the query results to the leader node for final processing
+  the leader node merges the data in a single result set and addresses ant needed sorting or aggregation
+  the leader then returns the results to the client
+  - by design, want to try to use hardware as much as possible, so it runs faster
 
-
-
-
-
-
-
-
-
-
-
-
-
+what happens when leader node goes down?
+  - replace by Redshift
+  - leader node doesn't really hold data, so it's easily to recover
+  - 5-10 mins?
