@@ -148,19 +148,3 @@ transition for resizing:
   - during the resizing (downgrade or up), can read the old cluster
   - can read and write to new cluster
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
