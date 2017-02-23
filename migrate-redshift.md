@@ -48,7 +48,6 @@ Schema design:
 Redshift:
   - single row inserts and deletes are expensive
   - mark as deleted and then insert at the bottom
-  - MVC system
   - optimized for batch inserts
     the time to insert a single row in redshift is roughly the same as inserting 100,000 rows
   - want to do a delete? then do it in a batch, with some larger set of data
