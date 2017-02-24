@@ -1,4 +1,5 @@
 ## February 23, 2017: Deep Dive on Amazon Redshift ##
+https://s3-us-west-1.amazonaws.com/architectureweeks/Database/SF+Februray+21-23%2C+2017/Database+S3.pdf
 
 Leader node:
   - does the parsing, send query and it parses it
