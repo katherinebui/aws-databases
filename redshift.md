@@ -1,4 +1,5 @@
 ## February 23, 2017: Redshift ##
+https://s3-us-west-1.amazonaws.com/architectureweeks/Database/SF+Februray+21-23%2C+2017/Database+S3.pdf
 
 Getting started with Amazon Redshift:
   - can migrate whole data center in several days
